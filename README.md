@@ -2,5 +2,7 @@
 
 ---
 
-## Neovim (^0.10)
+## Neovim
+
+- Working with Neovim version ^0.10
 
