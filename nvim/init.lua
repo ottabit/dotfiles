@@ -1,3 +1,3 @@
-require("config.settings")
-require("config.keymappings")
-require("config.lazy")
+require 'config.settings'
+require 'config.lazy'
+require 'config.keymappings'
