@@ -18,10 +18,10 @@ $scala\
 $conda\
 $python\
 $time\n  \
-[󱞪](fg:iris) \
+[󱞪](fg:lavender) \
 """
 
-palette = "rose-pine"
+palette = "catppuccin_macchiato"
 
 [palettes.rose-pine]
 overlay = '#26233a'
@@ -32,9 +32,44 @@ pine = '#31748f'
 foam = '#9ccfd8'
 iris = '#c4a7e7'
 
+[palettes.catppuccin_macchiato]
+rosewater = "#f4dbd6"
+flamingo = "#f0c6c6"
+pink = "#f5bde6"
+mauve = "#c6a0f6"
+red = "#ed8796"
+maroon = "#ee99a0"
+peach = "#f5a97f"
+yellow = "#eed49f"
+green = "#a6da95"
+teal = "#8bd5ca"
+sky = "#91d7e3"
+sapphire = "#7dc4e4"
+blue = "#8aadf4"
+lavender = "#b7bdf8"
+text = "#cad3f5"
+subtext1 = "#b8c0e0"
+subtext0 = "#a5adcb"
+overlay2 = "#939ab7"
+overlay1 = "#8087a2"
+overlay0 = "#6e738d"
+surface2 = "#5b6078"
+surface1 = "#494d64"
+surface0 = "#363a4f"
+base = "#24273a"
+mantle = "#1e2030"
+crust = "#181926"
+
+[username]
+disabled = false
+format = "[](fg:surface0)[ 󰄛 $user ]($style)[](fg:surface0) "
+show_always = true
+style_root = "bg:surface0 fg:mauve"
+style_user = "bg:surface0 fg:mauve"
+
 [directory]
-format = "[](fg:overlay)[ $path ]($style)[](fg:overlay) "
-style = "bg:overlay fg:pine"
+format = "[](fg:surface0)[ $path ]($style)[](fg:surface0) "
+style = "bg:surface0 fg:pink"
 truncation_length = 3
 truncation_symbol = "…/"
 
@@ -44,120 +79,113 @@ Downloads = " "
 Music = " "
 Pictures = " "
 
-[fill]
-style = "fg:overlay"
-symbol = " "
-
 [git_branch]
-format = "[](fg:overlay)[ $symbol $branch ]($style)[](fg:overlay) "
-style = "bg:overlay fg:foam"
+format = "[](fg:surface0)[ $symbol $branch ]($style)[](fg:surface0) "
+style = "bg:surface0 fg:pink"
 symbol = ""
 
 [git_status]
 disabled = false
-style = "bg:overlay fg:love"
-format = '[](fg:overlay)([$all_status$ahead_behind]($style))[](fg:overlay) '
-up_to_date = '[ ✓ ](bg:overlay fg:iris)'
-untracked = '[?\($count\)](bg:overlay fg:gold)'
-stashed = '[\$](bg:overlay fg:iris)'
-modified = '[!\($count\)](bg:overlay fg:gold)'
-renamed = '[»\($count\)](bg:overlay fg:iris)'
+style = "bg:surface0 fg:flamingo"
+format = '[](fg:surface0)([$all_status$ahead_behind]($style))[](fg:surface0) '
+up_to_date = '[ ✓ ](bg:surface0 fg:green)'
+untracked = '[?\($count\)](bg:surface0 fg:yellow)'
+stashed = '[\$](bg:surface0 fg:green)'
+modified = '[!\($count\)](bg:surface0 fg:yellow)'
+renamed = '[»\($count\)](bg:surface0 fg:green)'
 deleted = '[✘\($count\)](style)'
-staged = '[++\($count\)](bg:overlay fg:gold)'
-ahead = '[⇡\(${count}\)](bg:overlay fg:foam)'
-diverged = '⇕[\[](bg:overlay fg:iris)[⇡\(${ahead_count}\)](bg:overlay fg:foam)[⇣\(${behind_count}\)](bg:overlay fg:rose)[\]](bg:overlay fg:iris)'
-behind = '[⇣\(${count}\)](bg:overlay fg:rose)'
+staged = '[++\($count\)](bg:surface0 fg:yellow)'
+ahead = '[⇡\(${count}\)](bg:surface0 fg:teal)'
+diverged = '⇕[\[](bg:surface0 fg:green)[⇡\(${ahead_count}\)](bg:surface0 fg:teal)[⇣\(${behind_count}\)](bg:surface0 fg:peach)[\]](bg:surface0 fg:green)'
+behind = '[⇣\(${count}\)](bg:surface0 fg:peach)'
+
+[fill]
+style = "fg:surface0"
+symbol = " "
 
 [time]
 disabled = false
-format = "[](fg:overlay)[ $time 󱑒 ]($style)[](fg:overlay)"
-style = "bg:overlay fg:rose"
+format = "[](fg:surface0)[ $time 󱑒 ]($style)[](fg:surface0)"
+style = "bg:surface0 fg:blue"
 time_format = "%I:%M%P"
 use_12hr = true
-
-[username]
-disabled = false
-format = "[](fg:overlay)[ 󰄛 $user ]($style)[](fg:overlay) "
-show_always = true
-style_root = "bg:overlay fg:iris"
-style_user = "bg:overlay fg:iris"
 
 # Languages
 
 [c]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = " "
 
 [elixir]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = " "
 
 [elm]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = " "
 
 [golang]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = " "
 
 [haskell]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = " "
 
 [java]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = " "
 
 [julia]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = " "
 
 [nodejs]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = "󰎙 "
 
 [nim]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = "󰆥 "
 
 [rust]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = ""
 
 [scala]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = " "
 
 [python]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$version]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$version]($style)[](fg:surface0) "
 disabled = false
 symbol = ' '
 
 [conda]
-style = "bg:overlay fg:pine"
-format = "[](fg:overlay)[$symbol$environment]($style)[](fg:overlay) "
+style = "bg:surface0 fg:sapphire"
+format = "[](fg:surface0)[$symbol$environment]($style)[](fg:surface0) "
 disabled = false
 symbol = '🅒 '
